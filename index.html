@@ -3,8 +3,9 @@
 <head>
     <title>Home Page</title>
 
-    <link rel="stylesheet" type="text/css" href="{{ url_for(filename='styles.css') }}">
-    <script type="text/javascript" src="{{ url_for(filename="profile.js")}}" ></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="../static/style.css">
+    <script type="text/javascript" src="{{ url_for('static', "filename=js/profile.js")}}" ></script>
 
 
 </head>
@@ -22,9 +23,7 @@
       </ul>
     </div>
   </div>
-  <!-- end navbar header -->
 
-  <!-- sidebar slider -->
   <div class="nav-screen">
     <i class="fa fa-times fa-3x"></i>
     <div class="nav-container">
@@ -37,13 +36,10 @@
       </div>
     </div>
   </div>
-  <!-- end navbar slider -->
 
-  <!-- begin fullpage -->
 
   <div id="fullpage">
 
-    <!-- begin section -->
 
     <div class="section aboutme" data-anchor="aboutme">
       <div class="opaque-bg animated fadeInDown">
@@ -52,9 +48,7 @@
       </div>
       <i id="moveDown" class="fa fa-chevron-down fa-3x bounce"></i>
     </div>
-    <!-- end section -->
 
-    <!-- begin section -->
 
     <div class="section" data-anchor="skills">
       <div class="content">
@@ -66,43 +60,40 @@
             <div class="skillbar-title" style="background: #DD1E2F;"><span>HTML5</span></div>
             <div class="skillbar-bar" style="background: #DD1E2F;"></div>
             <div class="skill-bar-percent">90%</div>
-          </div> <!-- End Skill Bar -->
+          </div>
 
           <div class="skillbar clearfix " data-percent="80%">
             <div class="skillbar-title" style="background: #EBB035;"><span>CSS3</span></div>
             <div class="skillbar-bar" style="background: #EBB035;"></div>
             <div class="skill-bar-percent">80%</div>
-          </div> <!-- End Skill Bar -->
+          </div>
 
           <div class="skillbar clearfix " data-percent="75%">
             <div class="skillbar-title" style="background: #218559;"><span>Photoshop</span></div>
             <div class="skillbar-bar" style="background: #218559;"></div>
             <div class="skill-bar-percent">75%</div>
-          </div> <!-- End Skill Bar -->
+          </div>
 
           <div class="skillbar clearfix " data-percent="45%">
             <div class="skillbar-title" style="background: #6840D4;"><span>Rails</span></div>
             <div class="skillbar-bar" style="background: #6840D4;"></div>
             <div class="skill-bar-percent">45%</div>
-          </div> <!-- End Skill Bar -->
+          </div>
 
           <div class="skillbar clearfix " data-percent="30%">
             <div class="skillbar-title" style="background: #06A2CB;"><span>jQuery</span></div>
             <div class="skillbar-bar" style="background: #06A2CB;"></div>
             <div class="skill-bar-percent">30%</div>
-          </div> <!-- End Skill Bar -->
+          </div>
 
           <div class="skillbar clearfix " data-percent="20%">
             <div class="skillbar-title" style="background: #AB4DD2;"><span>PHP</span></div>
             <div class="skillbar-bar" style="background: #AB4DD2;"></div>
             <div class="skill-bar-percent">20%</div>
-          </div> <!-- End Skill Bar -->
+          </div>
         </div>
       </div>
     </div>
-    <!-- end section -->
-
-    <!-- begin section -->
 
     <div class="section" data-anchor="projects">
       <div class="content-slide">
@@ -138,9 +129,6 @@
         </div>
       </div>
     </div>
-    <!-- end section -->
-
-    <!-- begin section -->
 
     <div class="section" data-anchor="contact">
       <div class="content wow fadeInDown" data-wow-delay="0.2s">
@@ -180,9 +168,6 @@
         </div>
       </div>
     </div>
-    <!-- end section -->
-
-    <!-- begin section -->
 
     <div class="section fp-auto-height">
       <div class="footer">
@@ -193,9 +178,7 @@
         </div>
       </div>
     </div>
-    <!-- end section -->
 
   </div>
-  <!-- end fullpage -->
 </body>
 </html>
