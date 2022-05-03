@@ -1,32 +1,5 @@
-/*
-=====================================================================
-*   Ceevee v1.0 Layout Stylesheet
-*   url: styleshout.com
-*   03-18-2014
-=====================================================================
-
-   TOC:
-   a. General Styles
-   b. Header Styles
-   c. About Section
-   d. Resume Section
-   e. Portfolio Section
-   f. Call To Action Section
-   g. Testimonials Section
-   h. Contact Section
-   i. Footer
-
-===================================================================== */
-
-/* ------------------------------------------------------------------ */
-/* a. General Styles
-/* ------------------------------------------------------------------ */
-
 body { background: #0f0f0f; }
 
-/* ------------------------------------------------------------------ */
-/* b. Header Styles
-/* ------------------------------------------------------------------ */
 
 header {
    position: relative;
@@ -40,7 +13,6 @@ header {
    overflow: hidden;
 }
 
-/* vertically center banner section */
 header:before {
    content: '';
    display: inline-block;
@@ -82,7 +54,6 @@ header .banner-text hr {
    border-color: rgba(150, 150, 150, .1);
 }
 
-/* header social links */
 header .social {
    margin: 24px 0;
    padding: 0;
@@ -97,7 +68,6 @@ header .social li {
 header .social li a { color: #fff; }
 header .social li a:hover { color: #11ABB0; }
 
-/* scrolldown link */
 header .scrolldown a {
    position: absolute;
    bottom: 30px;
@@ -119,8 +89,6 @@ header .scrolldown a {
 }
 header .scrolldown a:hover { color: #11ABB0; }
 
-/* primary navigation
---------------------------------------------------------------------- */
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
 	 margin: 0;
 	 padding: 0;
@@ -128,7 +96,6 @@ header .scrolldown a:hover { color: #11ABB0; }
 	 outline: none;
 }
 
-/* nav-wrap */
 #nav-wrap {
    font: 12px 'opensans-bold', sans-serif;
    width: 100%;
@@ -142,14 +109,12 @@ header .scrolldown a:hover { color: #11ABB0; }
 }
 .opaque { background-color: #333; }
 
-/* hide toggle button */
 #nav-wrap > a.mobile-btn { display: none; }
 
 ul#nav {
    min-height: 48px;
    width: auto;
 
-   /* center align the menu */
    text-align: center;
 }
 ul#nav li {
@@ -159,10 +124,8 @@ ul#nav li {
    display: inline-block;
 }
 
-/* Links */
 ul#nav li a {
 
-/* 8px padding top + 8px padding bottom + 32px line-height = 48px */
 
    display: inline-block;
    padding: 8px 13px;
@@ -181,10 +144,6 @@ ul#nav li a {
 ul#nav li a:active { background-color: transparent !important; }
 ul#nav li.current a { color: #F06000; }
 
-
-/* ------------------------------------------------------------------ */
-/* c. About Section
-/* ------------------------------------------------------------------ */
 
 #about {
    background: #2B2B2B;
@@ -229,11 +188,6 @@ ul#nav li.current a { color: #F06000; }
    margin-right: 15px;
    font-size: 20px;
 }
-
-
-/* ------------------------------------------------------------------ */
-/* d. Resume Section
-/* ------------------------------------------------------------------ */
 
 #resume {
    background: #fff;
@@ -281,9 +235,6 @@ ul#nav li.current a { color: #F06000; }
    margin-top: 6px;
 }
 
-/*----------------------------------------------*/
-/*	Skill Bars
-/*----------------------------------------------*/
 
 .bars {
 	width: 95%;
@@ -406,9 +357,6 @@ ul#nav li.current a { color: #F06000; }
   100% { width: 50%;  }
 }
 
-/* ------------------------------------------------------------------ */
-/* e. Portfolio Section
-/* ------------------------------------------------------------------ */
 
 #portfolio {
    background: #ebeeee;
@@ -424,7 +372,6 @@ ul#nav li.current a { color: #F06000; }
    color: #95A3A3;
 }
 
-/* Portfolio Content */
 #portfolio-wrapper .columns { margin-bottom: 36px; }
 .portfolio-item .item-wrap {
    background: #fff;
@@ -442,7 +389,6 @@ ul#nav li.current a { color: #F06000; }
    cursor: pointer;
 }
 
-/* overlay */
 .portfolio-item .item-wrap .overlay {
    position: absolute;
    left: 0;
@@ -499,7 +445,6 @@ ul#nav li.current a { color: #F06000; }
    margin-bottom: 0;
 }
 
-/* on hover */
 .portfolio-item:hover .overlay {
 	opacity: 1;
 	-moz-opacity: 1;
@@ -511,7 +456,6 @@ ul#nav li.current a { color: #F06000; }
 	filter:alpha(opacity=100);
 }
 
-/* popup modal */
 .popup-modal {
 	max-width: 550px;
 	background: #fff;
@@ -556,10 +500,7 @@ ul#nav li.current a { color: #F06000; }
 .popup-modal a.popup-modal-dismiss { margin-left: 24px; }
 
 
-/* fadein/fadeout effect for modal popup
-/* ------------------------------------------------------------------ */
 
-/* content at start */
 .mfp-fade.mfp-wrap .mfp-content .popup-modal {
    opacity: 0;
    -webkit-transition: all 200ms ease-in-out;
@@ -568,18 +509,15 @@ ul#nav li.current a { color: #F06000; }
 	-ms-transition: all 200ms ease-in-out;
    transition: all 200ms ease-in-out;
 }
-/* content fadein */
+
 .mfp-fade.mfp-wrap.mfp-ready .mfp-content .popup-modal {
    opacity: 1;
 }
-/* content fadeout */
+
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content .popup-modal {
    opacity: 0;
 }
 
-/* ------------------------------------------------------------------ */
-/* f. Call To Action Section
-/* ------------------------------------------------------------------ */
 
 #call-to-action {
    background: #212121;
@@ -618,12 +556,7 @@ ul#nav li.current a { color: #F06000; }
    color: #636363;
    font-size: 17px;
 }
-/*#
-call-to-action .button {
-	color:#fff;
-   background: #0D0D0D;
-}
-*/
+
 #call-to-action .button:hover,
 #call-to-action .button:active {
    background: #FFFFFF;
@@ -634,9 +567,6 @@ call-to-action .button {
 	color: #D8D8D8;
 }
 
-/* ------------------------------------------------------------------
-/* g. Testimonials
-/* ------------------------------------------------------------------ */
 
 #testimonials {
    background: #1F1F1F url(../images/testimonials-bg.jpg) no-repeat center center;
@@ -672,7 +602,6 @@ call-to-action .button {
    color: #fff;
 }
 
-/*	Blockquotes */
 #testimonials blockquote {
    margin: 0 0px 30px 0px;
    padding-left: 0;
@@ -698,10 +627,7 @@ call-to-action .button {
 #testimonials blockquote cite a,
 #testimonials blockquote cite a:visited { color: #8B9798; border: none }
 
-/* Flex Slider
-/* ------------------------------------------------------------------ */
 
-/* Reset */
 .flexslider a:active,
 .flexslider a:focus  { outline: none; }
 .slides,
@@ -709,7 +635,6 @@ call-to-action .button {
 .flex-direction-nav { margin: 0; padding: 0; list-style: none; }
 .slides li { margin: 0; padding: 0;}
 
-/* Necessary Styles */
 .flexslider {
    position: relative;
    zoom: 1;
@@ -719,12 +644,9 @@ call-to-action .button {
 .flexslider .slides { zoom: 1; }
 .flexslider .slides > li { position: relative; }
 
-/* Hide the slides before the JS is loaded. Avoids image jumping */
 .flexslider .slides > li { display: none; -webkit-backface-visibility: hidden; }
-/* Suggested container for slide animation setups. Can replace this with your own */
 .flex-container { zoom: 1; position: relative; }
 
-/* Clearfix for .slides */
 .slides:before,
 .slides:after {
    content: " ";
@@ -734,19 +656,16 @@ call-to-action .button {
    clear: both;
 }
 
-/* No JavaScript Fallback */
-/* If you are not using another script, such as Modernizr, make sure you
- * include js that eliminates this class on page load */
+
 .no-js .slides > li:first-child { display: block; }
 
-/* Slider Styles */
+
 .slides { zoom: 1; }
 .slides > li {
-   /*margin-right: 5px; */
    overflow: hidden;
 }
 
-/* Control Nav */
+
 .flex-control-nav {
     width: 100%;
     position: absolute;
@@ -783,9 +702,6 @@ call-to-action .button {
     cursor: default;
 }
 
-/* ------------------------------------------------------------------ */
-/* h. Contact Section
-/* ------------------------------------------------------------------ */
 
 #contact {
    background: #191919;
@@ -829,7 +745,6 @@ call-to-action .button {
 #contact .header-col { padding-top: 6px; }
 
 
-/* contact form */
 #contact form { margin-bottom: 30px; }
 #contact label {
    font: 15px/24px 'opensans-bold', sans-serif;
@@ -900,8 +815,6 @@ call-to-action .button {
    top: 17px;
 }
 
-
-/* Twitter Feed */
 #twitter {
    margin-top: 12px;
    padding: 0;
@@ -920,10 +833,6 @@ call-to-action .button {
 }
 
 
-/* ------------------------------------------------------------------ */
-/* i. Footer
-/* ------------------------------------------------------------------ */
-
 footer {
    padding-top: 48px;
    margin-bottom: 48px;
@@ -936,7 +845,6 @@ footer {
 footer a, footer a:visited { color: #525252; }
 footer a:hover, footer a:focus { color: #fff; }
 
-/* copyright */
 footer .copyright {
     margin: 0;
     padding: 0;
@@ -960,7 +868,6 @@ footer .copyright  li:first-child:before {
     display: none;
 }
 
-/* social links */
 footer .social-links {
    margin: 18px 0 30px 0;
    padding: 0;
@@ -976,7 +883,6 @@ footer .social-links li {
 
 footer .social-links li:first-child { margin-left: 0; }
 
-/* Go To Top Button */
 #go-top {
 	position: absolute;
 	top: -24px;
