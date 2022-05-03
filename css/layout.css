@@ -1,32 +1,5 @@
-/*
-=====================================================================
-*   Ceevee v1.0 Layout Stylesheet
-*   url: styleshout.com
-*   03-18-2014
-=====================================================================
-
-   TOC:
-   a. General Styles
-   b. Header Styles
-   c. About Section
-   d. Resume Section
-   e. Portfolio Section
-   f. Call To Action Section
-   g. Testimonials Section
-   h. Contact Section
-   i. Footer
-
-===================================================================== */
-
-/* ------------------------------------------------------------------ */
-/* a. General Styles
-/* ------------------------------------------------------------------ */
-
 body { background: #0f0f0f; }
 
-/* ------------------------------------------------------------------ */
-/* b. Header Styles
-/* ------------------------------------------------------------------ */
 
 header {
    position: relative;
@@ -119,8 +92,7 @@ header .scrolldown a {
 }
 header .scrolldown a:hover { color: #11ABB0; }
 
-/* primary navigation
---------------------------------------------------------------------- */
+
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
 	 margin: 0;
 	 padding: 0;
@@ -182,10 +154,6 @@ ul#nav li a:active { background-color: transparent !important; }
 ul#nav li.current a { color: #F06000; }
 
 
-/* ------------------------------------------------------------------ */
-/* c. About Section
-/* ------------------------------------------------------------------ */
-
 #about {
    background: #2B2B2B;
    padding-top: 96px;
@@ -231,9 +199,6 @@ ul#nav li.current a { color: #F06000; }
 }
 
 
-/* ------------------------------------------------------------------ */
-/* d. Resume Section
-/* ------------------------------------------------------------------ */
 
 #resume {
    background: #fff;
@@ -281,9 +246,6 @@ ul#nav li.current a { color: #F06000; }
    margin-top: 6px;
 }
 
-/*----------------------------------------------*/
-/*	Skill Bars
-/*----------------------------------------------*/
 
 .bars {
 	width: 95%;
@@ -406,9 +368,6 @@ ul#nav li.current a { color: #F06000; }
   100% { width: 50%;  }
 }
 
-/* ------------------------------------------------------------------ */
-/* e. Portfolio Section
-/* ------------------------------------------------------------------ */
 
 #portfolio {
    background: #ebeeee;
@@ -556,9 +515,6 @@ ul#nav li.current a { color: #F06000; }
 .popup-modal a.popup-modal-dismiss { margin-left: 24px; }
 
 
-/* fadein/fadeout effect for modal popup
-/* ------------------------------------------------------------------ */
-
 /* content at start */
 .mfp-fade.mfp-wrap .mfp-content .popup-modal {
    opacity: 0;
@@ -576,10 +532,6 @@ ul#nav li.current a { color: #F06000; }
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content .popup-modal {
    opacity: 0;
 }
-
-/* ------------------------------------------------------------------ */
-/* f. Call To Action Section
-/* ------------------------------------------------------------------ */
 
 #call-to-action {
    background: #212121;
@@ -618,12 +570,7 @@ ul#nav li.current a { color: #F06000; }
    color: #636363;
    font-size: 17px;
 }
-/*#
-call-to-action .button {
-	color:#fff;
-   background: #0D0D0D;
-}
-*/
+
 #call-to-action .button:hover,
 #call-to-action .button:active {
    background: #FFFFFF;
@@ -634,9 +581,6 @@ call-to-action .button {
 	color: #D8D8D8;
 }
 
-/* ------------------------------------------------------------------
-/* g. Testimonials
-/* ------------------------------------------------------------------ */
 
 #testimonials {
    background: #1F1F1F url(../images/testimonials-bg.jpg) no-repeat center center;
@@ -672,7 +616,7 @@ call-to-action .button {
    color: #fff;
 }
 
-/*	Blockquotes */
+
 #testimonials blockquote {
    margin: 0 0px 30px 0px;
    padding-left: 0;
@@ -698,10 +642,7 @@ call-to-action .button {
 #testimonials blockquote cite a,
 #testimonials blockquote cite a:visited { color: #8B9798; border: none }
 
-/* Flex Slider
-/* ------------------------------------------------------------------ */
 
-/* Reset */
 .flexslider a:active,
 .flexslider a:focus  { outline: none; }
 .slides,
@@ -709,7 +650,7 @@ call-to-action .button {
 .flex-direction-nav { margin: 0; padding: 0; list-style: none; }
 .slides li { margin: 0; padding: 0;}
 
-/* Necessary Styles */
+
 .flexslider {
    position: relative;
    zoom: 1;
@@ -734,9 +675,6 @@ call-to-action .button {
    clear: both;
 }
 
-/* No JavaScript Fallback */
-/* If you are not using another script, such as Modernizr, make sure you
- * include js that eliminates this class on page load */
 .no-js .slides > li:first-child { display: block; }
 
 /* Slider Styles */
@@ -783,9 +721,6 @@ call-to-action .button {
     cursor: default;
 }
 
-/* ------------------------------------------------------------------ */
-/* h. Contact Section
-/* ------------------------------------------------------------------ */
 
 #contact {
    background: #191919;
@@ -920,9 +855,6 @@ call-to-action .button {
 }
 
 
-/* ------------------------------------------------------------------ */
-/* i. Footer
-/* ------------------------------------------------------------------ */
 
 footer {
    padding-top: 48px;
