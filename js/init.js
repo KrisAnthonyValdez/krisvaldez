@@ -1,23 +1,10 @@
-/*-----------------------------------------------------------------------------------
-/*
-/* Init JS
-/*
------------------------------------------------------------------------------------*/
-
  jQuery(document).ready(function($) {
 
-/*----------------------------------------------------*/
-/* FitText Settings
------------------------------------------------------- */
 
     setTimeout(function() {
 	   $('h1.responsive-headline').fitText(1, { minFontSize: '40px', maxFontSize: '90px' });
 	 }, 100);
 
-
-/*----------------------------------------------------*/
-/* Smooth Scrolling
------------------------------------------------------- */
 
    $('.smoothscroll').on('click',function (e) {
 	    e.preventDefault();
@@ -31,11 +18,6 @@
 	        window.location.hash = target;
 	    });
 	});
-
-
-/*----------------------------------------------------*/
-/* Highlight the current section in the navigation bar
-------------------------------------------------------*/
 
 	var sections = $("section");
 	var navigation_links = $("#nav-wrap a");
@@ -60,11 +42,6 @@
 	});
 
 
-/*----------------------------------------------------*/
-/*	Make sure that #header-background-image height is
-/* equal to the browser height.
------------------------------------------------------- */
-
    $('header').css({ 'height': $(window).height() });
    $(window).on('resize', function() {
 
@@ -72,10 +49,6 @@
         $('body').css({ 'width': $(window).width() })
    });
 
-
-/*----------------------------------------------------*/
-/*	Fade In/Out Primary Navigation
-------------------------------------------------------*/
 
    $(window).on('scroll', function() {
 
@@ -98,10 +71,6 @@
 	});
 
 
-/*----------------------------------------------------*/
-/*	Modal Popup
-------------------------------------------------------*/
-
     $('.item-wrap a').magnificPopup({
 
        type:'inline',
@@ -117,10 +86,6 @@
     		$.magnificPopup.close();
     });
 
-
-/*----------------------------------------------------*/
-/*	Flexslider
-/*----------------------------------------------------*/
    $('.flexslider').flexslider({
       namespace: "flex-",
       controlsContainer: ".flex-container",
@@ -133,9 +98,6 @@
       randomize: false,
    });
 
-/*----------------------------------------------------*/
-/*	contact form
-------------------------------------------------------*/
 
    $('form#contactForm button.submit').click(function() {
 
@@ -156,14 +118,12 @@
 	      data: data,
 	      success: function(msg) {
 
-            // Message was sent
             if (msg == 'OK') {
                $('#image-loader').fadeOut();
                $('#message-warning').hide();
                $('#contactForm').fadeOut();
                $('#message-success').fadeIn();   
             }
-            // There was an error
             else {
                $('#image-loader').fadeOut();
                $('#message-warning').html(msg);
@@ -178,11 +138,3 @@
 
 
 });
-
-
-
-
-
-
-
-
